@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{client} - {####}",
+ "creation": "2025-09-30 06:42:06.424991",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gbha",
+  "amended_from",
+  "client",
+  "service",
+  "column_break_goys",
+  "session_date_and_time",
+  "section_break_vtwz",
+  "status",
+  "column_break_lnxw",
+  "approved"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gbha",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Consultation Session Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Client",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "session_date_and_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Session Date And Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_vtwz",
+   "fieldtype": "Section Break",
+   "label": "Status & Approval"
+  },
+  {
+   "default": "Pending Approval",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending Approval\nPending Payment\nConfirmed\nCancelled"
+  },
+  {
+   "default": "0",
+   "fieldname": "approved",
+   "fieldtype": "Check",
+   "label": "Approved",
+   "options": "0"
+  },
+  {
+   "fieldname": "column_break_lnxw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Initial Consultation Session",
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "Service",
+   "options": "Item"
+  },
+  {
+   "fieldname": "column_break_goys",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Sales Invoice",
+   "link_fieldname": "consultation_session_booking"
+  }
+ ],
+ "modified": "2025-10-02 13:44:51.314040",
+ "modified_by": "Administrator",
+ "module": "consultations",
+ "name": "Consultation Session Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
