@@ -1,0 +1,88 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"Yn8bV2btyT\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Consultations</span>\",\"col\":12}},{\"id\":\"cROzTSVzMT\",\"type\":\"card\",\"data\":{\"card_name\":\"Consultations\",\"col\":4}},{\"id\":\"TUkPlj1OLy\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"KySgLiBui3\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}}]",
+ "creation": "2025-11-08 02:21:25.131493",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "users",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Consultations",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consultation Bookings",
+   "link_count": 0,
+   "link_to": "Consultation Session Booking",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consultations",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consultation Bookings",
+   "link_count": 0,
+   "link_to": "Consultation Session Booking",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Projects",
+   "link_count": 0,
+   "link_to": "Project",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Consultations Settings",
+   "link_count": 0,
+   "link_to": "Consultations Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-11-19 00:31:44.159512",
+ "modified_by": "Administrator",
+ "module": "consultations",
+ "name": "Consultations",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 39.0,
+ "shortcuts": [],
+ "title": "Consultations"
+}
