@@ -6,7 +6,12 @@
  "engine": "InnoDB",
  "field_order": [
   "customer_settings_section",
-  "defualt_customer"
+  "defualt_customer",
+  "active_hours_section",
+  "starting_time",
+  "ending_time",
+  "column_break_syhu",
+  "session_duration"
  ],
  "fields": [
   {
@@ -19,13 +24,37 @@
    "fieldtype": "Link",
    "label": "Defualt Customer",
    "options": "Customer"
+  },
+  {
+   "fieldname": "active_hours_section",
+   "fieldtype": "Section Break",
+   "label": "Active Hours"
+  },
+  {
+   "fieldname": "starting_time",
+   "fieldtype": "Time",
+   "label": "Starting Time"
+  },
+  {
+   "fieldname": "ending_time",
+   "fieldtype": "Time",
+   "label": "Ending Time"
+  },
+  {
+   "fieldname": "column_break_syhu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "session_duration",
+   "fieldtype": "Duration",
+   "label": "Session Duration"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-11-18 23:26:41.462302",
+ "modified": "2025-11-19 22:54:40.476021",
  "modified_by": "Administrator",
  "module": "consultations",
  "name": "Consultations Settings",
