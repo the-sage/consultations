@@ -22,7 +22,7 @@
   {
    "fieldname": "defualt_customer",
    "fieldtype": "Link",
-   "label": "Defualt Customer",
+   "label": "Default Customer",
    "options": "Customer"
   },
   {
@@ -54,7 +54,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-11-19 22:54:40.476021",
+ "modified": "2025-11-28 00:48:47.358642",
  "modified_by": "Administrator",
  "module": "consultations",
  "name": "Consultations Settings",
