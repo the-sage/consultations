@@ -12,6 +12,7 @@
  "apply_document_permissions": 0,
  "banner_image": "",
  "button_label": "Book Now",
+ "client_script": "frappe.web_form.after_load = () => {\r\n    frappe.web_form.set_query('service', () => {\r\n        return {\r\n            filters: {\r\n                item_group: 'Services',\r\n                disabled: 0\r\n            }\r\n        };\r\n    });\r\n};",
  "condition_json": "[]",
  "creation": "2025-10-22 22:39:44.862761",
  "currency": "OMR",
@@ -24,7 +25,7 @@
  "list_columns": [],
  "login_required": 0,
  "max_attachment_size": 0,
- "modified": "2025-11-30 00:42:24.901074",
+ "modified": "2025-12-02 01:47:55.601686",
  "modified_by": "Administrator",
  "module": "consultations",
  "name": "book-a-consultation",
@@ -106,21 +107,6 @@
   },
   {
    "allow_read_on_all_link_options": 0,
-   "default": "Initial Consultation Session",
-   "fieldname": "service",
-   "fieldtype": "Link",
-   "hidden": 0,
-   "label": "Service",
-   "max_length": 0,
-   "max_value": 0,
-   "options": "Item",
-   "precision": "",
-   "read_only": 0,
-   "reqd": 0,
-   "show_in_filter": 0
-  },
-  {
-   "allow_read_on_all_link_options": 0,
    "fieldname": "column_break_goys",
    "fieldtype": "Column Break",
    "hidden": 0,
@@ -134,6 +120,20 @@
   },
   {
    "allow_read_on_all_link_options": 0,
+   "fieldname": "salon_status",
+   "fieldtype": "Select",
+   "hidden": 0,
+   "label": "Describe your current status?",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Just Starting\nAlready Established",
+   "precision": "",
+   "read_only": 0,
+   "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
    "fieldname": "session_date_and_time",
    "fieldtype": "Datetime",
    "hidden": 0,
@@ -143,6 +143,21 @@
    "precision": "",
    "read_only": 0,
    "reqd": 1,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "default": "Initial Consultation Session",
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Service",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Item",
+   "precision": "",
+   "read_only": 0,
+   "reqd": 0,
    "show_in_filter": 0
   }
  ]
